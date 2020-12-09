@@ -1,0 +1,72 @@
+html{
+    box-sizing: border-box;
+}
+*,
+*::before
+*::after{
+    box-sizing: inherit;
+}
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 1.5rem;
+    line-height: 1.5;/*150% fontsize */
+    color: #ffffff;
+
+    min-height: 100vh;
+    background: url('images/christmas.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+h1,h2, p{
+    margin-top: 0;
+}
+.counterdown-header h1{
+    font-size: 4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.counterdown-subtitle{
+    position: relative;
+    margin-bottom: 0;
+    text-align: center;
+}
+.counterdown-subtitle::before,
+.counterdown-subtitle::after{
+    content: '';
+    width: 20px;
+    height: 1px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.counterdown-subtitle::before{
+    transform: translateX(-100%);
+}
+.counterdown-body{
+    display: flex;
+    
+}
+.counterdown-item{
+    text-align: center;
+    padding: 0 100px;
+}
+.counterdown-number{
+    font-size: 7rem;
+    font-weight: 300;
+    margin-bottom: 0;
+    line-height: .8;
+}
+.counterdown-text{
+    font-size: 2.5rem;
+}
